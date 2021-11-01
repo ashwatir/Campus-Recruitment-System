@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".LogIn">
+
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="228dp"
+        android:layout_height="43dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/average_sans"
+        android:hint="Email Id"
+        android:inputType="textPersonName"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:textColor="@color/brown"
+        android:textColorHint="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pw"
+        android:layout_width="228dp"
+        android:layout_height="41dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/average_sans"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:textColor="@color/brown"
+        android:textColorHint="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailid"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/average_sans"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:text="LOG IN"
+        android:textColor="@color/white"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pw"
+        app:layout_constraintVertical_bias="0.755" />
+
+    <TextView
+        android:id="@+id/reg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/average_sans"
+        android:text="New User? Register Here."
+        android:textColor="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintVertical_bias="0.15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

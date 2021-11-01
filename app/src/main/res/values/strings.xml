@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Campus Recruitment System</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Newsfeed</string>
+    <string name="title_dashboard">Ongoing</string>
+    <string name="title_notifications">Profile</string>
+    <string name="appwidget_text">Campus Recruitment System</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>

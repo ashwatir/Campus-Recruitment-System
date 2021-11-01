@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plain"
+    tools:context=".ForgetPw">
+
+  <TextView
+      android:id="@+id/fpwText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="194dp"
+      android:layout_marginBottom="116dp"
+      android:fontFamily="cursive"
+      android:text="Forgot Password?"
+      android:textColor="@android:color/primary_text_light"
+      android:textSize="36sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/emText"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/emText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="95dp"
+      android:layout_marginLeft="95dp"
+      android:layout_marginBottom="7dp"
+      android:fontFamily="cursive"
+      android:text="Enter your email"
+      android:textColor="@android:color/primary_text_light"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/fpEmail"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/fpwText" />
+
+  <EditText
+      android:id="@+id/fpEmail"
+
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginBottom="59dp"
+      android:background="@drawable/border"
+      android:ems="10"
+      android:hint="Email"
+      android:inputType="textPersonName"
+      android:paddingLeft="20sp"
+      android:paddingRight="20sp"
+      android:textColorHint="@color/brown"
+      app:layout_constraintBottom_toTopOf="@+id/fpSend"
+      app:layout_constraintEnd_toEndOf="@+id/fpwText"
+      app:layout_constraintStart_toStartOf="@+id/emText"
+      app:layout_constraintTop_toBottomOf="@+id/emText" />
+
+  <Button
+      android:id="@+id/fpSend"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="199dp"
+      android:text="SEND"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/fpEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
